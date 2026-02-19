@@ -55,7 +55,7 @@ const App: React.FC = () => {
             {language === 'en' ? 'Save The Date' : '誠摯邀請'}
           </h2>
           
-          <div className="relative w-full aspect-[4/3] md:aspect-[16/9] mb-8 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
+          <div className="relative w-full aspect-[1800/1404] mb-8 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
             <img 
               src="/cover.jpg" 
               alt="Queenie & Kenny" 
