@@ -42,7 +42,7 @@ const App: React.FC = () => {
       </button>
 
       {/* Hero Section */}
-      <section id="hero" className="relative h-screen flex flex-col items-center justify-center overflow-hidden bg-[#fffaf5]">
+      <section id="hero" className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-[#fffaf5]">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-10 left-10 text-rose-600 rotate-12"><Heart size={80} fill="currentColor" /></div>
           <div className="absolute bottom-20 right-20 text-rose-600 -rotate-12"><Heart size={60} fill="currentColor" /></div>
