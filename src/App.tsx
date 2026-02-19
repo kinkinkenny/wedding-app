@@ -57,7 +57,7 @@ const App: React.FC = () => {
           
           <div className="relative w-full aspect-[4/3] md:aspect-[16/9] mb-8 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
             <img 
-              src="/Q&K.png" 
+              src="/cover.jpg" 
               alt="Queenie & Kenny" 
               className="w-full h-full object-cover"
               onError={(e) => {
