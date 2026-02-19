@@ -161,7 +161,7 @@ const RSVPForm: React.FC<RSVPFormProps> = ({ language }) => {
             </label>
             <input
               required
-              type="tel"
+              type="text"
               className="w-full bg-white/10 border border-white/20 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-rose-600 text-white placeholder-slate-500"
               placeholder="+852 9XXX XXXX"
               value={formData.phone}
