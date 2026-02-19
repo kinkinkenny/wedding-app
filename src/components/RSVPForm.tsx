@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Send, CheckCircle2, Loader2 } from 'lucide-react';
 
-const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyOfVpBOVf6TTkxjwIgHpkHaVCGHQSdAuhTt2_JcScV541DTn0K62SoQLpRkA8nUPairg/exec";
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbygxzo3hbvHj-Mag0fwUiCXgsK44vj5atfDIorfFg2COxwykJpJLo-mkJKKcjAdXqL8ow/exec";
 
 interface RSVPFormProps {
   language: 'en' | 'zh';
