@@ -50,35 +50,35 @@ const App: React.FC = () => {
           <div className="absolute bottom-1/3 right-1/4 text-rose-200"><Heart size={100} fill="currentColor" /></div>
         </div>
 
-        <div className={`transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} text-center z-10 w-full max-w-5xl px-0`}>
-          <h2 className="text-rose-600 font-serif-luxury text-xl md:text-2xl uppercase tracking-[0.3em] mb-8 px-4">
+        <div className={`transition-all duration-1000 transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'} text-center z-10 px-4 w-full max-w-4xl`}>
+          <h2 className="text-rose-600 font-serif-luxury text-xl md:text-2xl uppercase tracking-[0.3em] mb-8">
             {language === 'en' ? 'Save The Date' : '誠摯邀請'}
           </h2>
           
-          <div className="relative w-full aspect-[1920/1497] mb-6 rounded-none sm:rounded-2xl overflow-hidden shadow-2xl border-0 sm:border-4 border-white">
+          <div className="relative w-full aspect-[4/3] md:aspect-[16/9] mb-8 rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
             <img 
               src="/cover.jpg" 
               alt="Queenie & Kenny" 
-              className="w-full h-full object-cover object-top"
+              className="w-full h-full object-cover"
               onError={(e) => {
                 e.currentTarget.src = "https://picsum.photos/800/600?blur=2";
                 e.currentTarget.alt = "Please add Q&K.png to public folder";
               }}
             />
-            
+            <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
           </div>
 
-          <h1 className="font-serif-luxury text-4xl md:text-6xl font-bold text-slate-900 mb-6 px-4">
+          <h1 className="font-serif-luxury text-4xl md:text-6xl font-bold text-slate-900 mb-6">
             Queenie <span className="text-rose-600">&</span> Kenny
           </h1>
           
-          <p className="font-serif-luxury italic text-xl md:text-2xl text-slate-600 mb-10 px-4">
+          <p className="font-serif-luxury italic text-xl md:text-2xl text-slate-600 mb-10">
             {language === 'en' ? 'Are Getting Married' : '我們結婚了'}
           </p>
 
           <button 
             onClick={() => scrollTo('details')}
-            className="group relative inline-flex items-center justify-center px-8 py-3 font-semibold text-white transition-all duration-200 bg-rose-600 rounded-full hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500 shadow-lg shadow-rose-200 mx-4 sm:mx-0"
+            className="group relative inline-flex items-center justify-center px-8 py-3 font-semibold text-white transition-all duration-200 bg-rose-600 rounded-full hover:bg-rose-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-rose-500 shadow-lg shadow-rose-200"
           >
             {language === 'en' ? 'See Invitation Details' : '查看婚禮詳情'}
             <ChevronDown className="ml-2 animate-bounce" />
