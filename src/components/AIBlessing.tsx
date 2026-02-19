@@ -17,7 +17,7 @@ const AIBlessing: React.FC<AIBlessingProps> = ({ language }) => {
       const ai = new GoogleGenAI({ apiKey });
       const prompt = language === 'en'
         ? 'Write a short, romantic wedding blessing for Queenie Yung (The Queen of Hearts) and Kenny Tang (The King of Hearts). They are getting married. Write in elegant English. Keep it poetic and theme it around A Royal Match or The Perfect Hand. Approximately 80 words.'
-        : '為 Queenie Yung (紅桃Q) 和 Kenny Tang (紅桃K) 寫一段簡短浪漫的婚禮祝福。他們即將結婚。請用優美的中文撰寫。保持詩意，主題圍繞「天生一對」或「完美的牌局」。大約 80 字。';
+        : '為 翁健宜 (紅桃Q) 和 鄧國健 (紅桃K) 寫一段簡短浪漫的婚禮祝福。他們即將結婚。請用優美的中文撰寫。保持詩意，主題圍繞「天生一對」或「完美的牌局」。大約 80 字。';
 
       const response = await ai.models.generateContent({
         model: 'gemini-2.0-flash',
@@ -30,7 +30,7 @@ const AIBlessing: React.FC<AIBlessingProps> = ({ language }) => {
       console.error('Error generating blessing:', error);
       setBlessing(language === 'en'
         ? 'In the deck of life, Queenie and Kenny have found the most precious cards. A King and Queen joined by one heart, forever winning the game of love.'
-        : '在人生的牌局中，Queenie 和 Kenny 找到了最珍貴的牌。國王與皇后心心相印，永遠贏得這場愛的遊戲。'
+        : '在人生的牌局中，鄧國健 和 翁健宜 找到了最珍貴的牌。國王與皇后心心相印，永遠贏得這場愛的遊戲。'
       );
     } finally {
       setLoading(false);

@@ -24,7 +24,7 @@ const InvitationDetails: React.FC<InvitationDetailsProps> = ({ language }) => {
         ) : (
           <div className="mt-6 text-slate-600 max-w-lg mx-auto leading-relaxed space-y-4 text-justify">
             <p>在命運的牌局中，我們幸運地抽到了彼此，組成最完美的紅桃一對。</p>
-            <p>我是 Queenie，我是 Kenny。在我們即將步入婚姻殿堂的這個重要時刻，心裡最惦記的，就是一直以來陪伴我們成長的你。</p>
+            <p>我是翁健宜，我是鄧國健。在我們即將步入婚姻殿堂的這個重要時刻，心裡最惦記的，就是一直以來陪伴我們成長的你。</p>
             <p>對我們而言，這不只是一場婚禮，更是一份情感的凝聚。因為有你在場，我們的承諾才更具意義；因為有你的見證，這份紅桃傳說才算圓滿。</p>
             <p className="font-semibold text-rose-700">誠摯邀請你，來參與我們的盛大喜悅。</p>
           </div>
