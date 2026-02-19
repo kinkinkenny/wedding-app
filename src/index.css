@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@700&family=Montserrat:wght@300;400;600&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+.font-serif-luxury { font-family: 'Cormorant Garamond', serif; }
+.font-script { font-family: 'Dancing Script', cursive; }
